@@ -99,6 +99,10 @@
 
       &.download {
         background: $button-download;
+
+        &[disabled] {
+          background: transparentize(darken($button-download, 30), 0.7);
+        }
       }
     }
   }
