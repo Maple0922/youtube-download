@@ -1,0 +1,15 @@
+// header
+
+.header {
+  position: relative;
+  width: 100%;
+  height: $height-header;
+  padding: 0 30px;
+  background: $white;
+  box-shadow: $basic-shadow;
+
+  &__title {
+    font-size: 2.4rem;
+    line-height: $height-header;
+  }
+}

@@ -1,0 +1,16 @@
+// main
+
+.main {
+  min-height: $height-main;
+  padding: 30px;
+  font-size: 1.6rem;
+  background: $super-light-gray;
+
+  &__container {
+    padding: 16px 24px;
+    margin-bottom: 20px;
+    background: $white;
+    border-radius: 6px;
+    box-shadow: $basic-shadow;
+  }
+}
