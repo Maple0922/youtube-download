@@ -8,11 +8,17 @@ $gray: #888;
 $light-gray: #bbb;
 $super-light-gray: #eee;
 $white: #fcfcfc;
+$light-blue: #7799da;
+$light-pink: #ffa1c5;
 
 // to use
 $basic-shadow-color: $light-gray;
+$theme: $light-blue;
 
 // variables
 $height-header: 80px;
 $height-main: calc(100vh - #{$height-header});
-$basic-shadow: 0 0 8px 0 $basic-shadow-color;
+$basic-shadow: 0 0 4px 0 $basic-shadow-color;
+$input-shadow: 0 0 3px 1px $theme;
+$button-download: $theme;
+$button-paste: $dark-gray;
