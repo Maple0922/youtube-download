@@ -16,7 +16,7 @@
             <div class="main__container">
                 <form class="main__container__form" action="/" method="post">
                     <p class="main__container__message">動画のURLを入れて「ダウンロード」を押してください。</p>
-                    <input id="input" class="main__container__input" type="text" name="video_url" autofocus v-model="videoURL" placeholder="https://www.youtube.com/watch?v=abcdefg1234" required pattern="^https://www.youtube.com/watch[\?]v[\.=]" title="https://www.youtube.com/watch?v=...から始まるURLを入力してください。">
+                    <input id="input" class="main__container__input" type="text" name="video_url" autofocus v-model="videoURL" placeholder="https://www.youtube.com/watch?v=abcdefg1234" required pattern="^https?://[\w/:%#\$&\?\(\)~\.=\+\-]+" title="https://...から始まるURLを入力してください。">
                     <button class="main__container__button paste" type="button" name="button" v-on:click="paste">ペースト</button>
                     <button class="main__container__button download no-margin" type="submit" name="button">ダウンロード</button>
                 </form>
