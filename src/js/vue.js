@@ -19,7 +19,7 @@ export const app = new Vue({
                 downloadButton.disabled = true;
             }
         },
-        
+
         paste: function() {
             var pasteArea = document.getElementById("input");
             pasteArea.focus();
@@ -37,5 +37,12 @@ export const app = new Vue({
                 this.validate();
             });
         },
+
+        download: function(){
+            const requestUrl = this.videoURL;
+            const param = requestUrl.slice(-11);
+            const singleUrl = "https://www.youtube.com/embed/" + param;
+            window.open(singleUrl, '_blank');
+        }
     }
 });

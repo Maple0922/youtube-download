@@ -18,7 +18,7 @@
                     <p class="main__container__message">動画のURLを入れて「ダウンロード」を押してくさい。</p>
                     <input id="input" class="main__container__input" type="text" name="video_url" autofocus v-model="videoURL" v-on:input="validate" placeholder="https://www.youtube.com/watch?v=abcdefg1234">
                     <button id="paste" class="main__container__button paste" type="button" name="button" v-on:click="paste">ペースト</button>
-                    <button id="download" class="main__container__button download no-margin" disabled type="button" name="button">ダウンロード</button>
+                    <button id="download" class="main__container__button download no-margin" disabled type="button" name="button" v-on:click="download">ダウンロード</button>
                 </form>
             </div>
         </main>
