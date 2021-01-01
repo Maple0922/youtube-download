@@ -41,7 +41,9 @@ export const app = new Vue({
         download: function(){
             const requestUrl = this.videoURL;
             const param = requestUrl.slice(-11);
-            const singleUrl = "https://www.youtube.com/embed/" + param;
+            // const singleUrl = "https://www.youtube.com/embed/" + param;
+            // https://dirpy.com/studio?url=https://www.youtube.com/watch?v=wXRrarkBvuI
+            const singleUrl = "https://dirpy.com/studio?url=" + requestUrl;
             window.open(singleUrl, '_blank');
         }
     }
